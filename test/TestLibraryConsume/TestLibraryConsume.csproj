@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -79,7 +80,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Services\Clickatell.Services.csproj">
+    <ProjectReference Include="..\..\src\Clickatell.Services\Clickatell.Services.csproj">
       <Project>{15da1369-a486-46d0-a175-d957f64d0ad1}</Project>
       <Name>Clickatell.Services</Name>
     </ProjectReference>
