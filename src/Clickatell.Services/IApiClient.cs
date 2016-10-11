@@ -2,7 +2,7 @@
 
 namespace Clickatell.Services
 {
-    public abstract class ApiClient : ApiHelper, IApiClient
+    interface IApiClient
     {
         /// <summary>
         /// Authenticate credentials supplied
@@ -11,7 +11,7 @@ namespace Clickatell.Services
         /// Success = If call was successfully made to Clickatell
         /// Result  = Service response
         /// </returns>
-        public abstract Response Authenticate();
+        Response Authenticate();
 
         /// <summary>
         /// Sends a message to the phonenumber(s) supplied.
@@ -23,7 +23,7 @@ namespace Clickatell.Services
         /// Result  = Service response
         /// Messages[] = Message object which will have the APIMessageID(Guid created for message for reference) and To(The phonenumber)
         /// </returns>
-        public abstract SendMessageResponse SendMessage(SendMessageRequest request);
+        SendMessageResponse SendMessage(SendMessageRequest request);
 
         /// <summary>
         /// Get current credentials account balance
@@ -34,7 +34,7 @@ namespace Clickatell.Services
         /// Result  = Service response
         /// Credit  = Credits you have left for current credentials
         /// </returns>
-        public abstract BalanceResponse GetBalance();
+        BalanceResponse GetBalance();
 
         /// <summary>
         /// Sends request with APIMessageID(s) to stop/delete a message. 
@@ -47,7 +47,7 @@ namespace Clickatell.Services
         /// Result  = Service response
         /// MessageStatuses[]  = MessageStatus object which will have the current APIMessageID, Status and Description of the message.
         /// </returns>
-        public abstract MessageStatusResponse StopMessage(APIMessageRequest request);
+        MessageStatusResponse StopMessage(APIMessageRequest request);
 
         /// <summary>
         /// Sends request with Phonenumbers to see if it is within coverage. (Coverage depends on your Clickatell account settings)
@@ -59,7 +59,7 @@ namespace Clickatell.Services
         /// Result  = Service response
         /// MessageCoverages[]  = MessageCoverage object which will have Routable(If it is within the coverage) and Destination(The phonenumber supplied).
         /// </returns>
-        public abstract MessagCoverageResponse GetCoverage(MessageRequest request);
+        MessagCoverageResponse GetCoverage(MessageRequest request);
 
         /// <summary>
         /// Sends a request with APIMessageID(s) to see what the costs were for these phonenumber(s) sent.
@@ -71,7 +71,7 @@ namespace Clickatell.Services
         /// Result  = Service response
         /// MessageCharges[]  = MessageCharge object which will have the current APIMessageID and Charge of that call.
         /// </returns>
-        public abstract MessageChargeResponse GetMessageCharge(APIMessageRequest request);
+        MessageChargeResponse GetMessageCharge(APIMessageRequest request);
 
         /// <summary>
         /// Sends a request with APIMessageID(s) to see in what status the requested APIMessageID(s) are.
@@ -83,6 +83,6 @@ namespace Clickatell.Services
         /// Result  = Service response
         /// MessageStatuses[]  = MessageStatus object which will have the current APIMessageID, Status and Description of the message.
         /// </returns>
-        public abstract MessageStatusResponse GetMessageStatus(APIMessageRequest request);
+        MessageStatusResponse GetMessageStatus(APIMessageRequest request);
     }
 }

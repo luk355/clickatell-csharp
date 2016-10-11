@@ -12,7 +12,7 @@ namespace TestLibraryConsume
     public partial class TestDLL : System.Web.UI.Page
     {
         //instantiate client
-        Clickatell.Services.APIClient _apiClient;
+        Clickatell.Services.ApiClient _apiClient;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -22,7 +22,7 @@ namespace TestLibraryConsume
             //_apiClient = new HTTP(new HTTPCredentials("Username", "Password", "APIid"));
 
             //REST
-            _apiClient = new REST(new RESTCredentials("AuthKey"));
+            _apiClient = new RestClient(new RESTCredentials("AuthKey"));
 
             //GetBalance
             GetBalance();

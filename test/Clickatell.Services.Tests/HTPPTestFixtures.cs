@@ -7,10 +7,10 @@ namespace Clickatell.Services.Tests
     [TestClass]
     public class HTPPTestFixtures
     {
-        private readonly APIClient _apiClient;
+        private readonly ApiClient _apiClient;
         public HTPPTestFixtures()
         {
-            _apiClient = new HTTP(new HTTPCredentials("userName", "password", "apiId"));
+            _apiClient = new HttpClient(new HTTPCredentials("userName", "password", "apiId"));
         }
 
         [TestMethod]

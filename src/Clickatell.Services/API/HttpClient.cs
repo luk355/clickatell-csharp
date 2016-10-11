@@ -9,10 +9,10 @@ using System.Collections.Generic;
 
 namespace Clickatell.Services.API
 {
-    public class HTTP : APIClient
+    public class HttpClient : ApiClient
     {
         #region Constructors
-        public HTTP(HTTPCredentials credentials)
+        public HttpClient(HTTPCredentials credentials)
         {
             //Sets HTTP API credentials
             _credentials = credentials;

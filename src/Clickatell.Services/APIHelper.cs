@@ -1,5 +1,4 @@
-﻿using Clickatell.Services.Data;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Json;
 using System.Text;
@@ -7,7 +6,7 @@ using System.Linq;
 
 namespace Clickatell.Services
 {
-    public class APIHelper
+    public class ApiHelper
     {
         /// <summary>
         /// Converts a List of Phonenumbers into a format requested
@@ -34,7 +33,7 @@ namespace Clickatell.Services
         /// <returns></returns>
         protected static string GetStatusCodeDescription(string code)
         {
-            return GetStatuses().Where(status => status.Key == code).FirstOrDefault().Value;
+            return GetStatuses().FirstOrDefault(status => status.Key == code).Value;
         }
 
         /// <summary>

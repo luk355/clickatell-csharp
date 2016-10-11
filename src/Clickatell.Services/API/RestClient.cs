@@ -5,14 +5,11 @@ using System.Text;
 using System.Linq;
 using System.Collections.Generic;
 using System.Reflection;
-using System.Xml.Linq;
-using System.Xml.Serialization;
 using Clickatell.Services.Data;
-using System.Runtime.Serialization.Json;
 
 namespace Clickatell.Services.API
 {
-    public class REST : APIClient
+    public class RestClient : ApiClient
     {
         #region Private Properties
 
@@ -21,7 +18,7 @@ namespace Clickatell.Services.API
         #endregion
 
         #region Constructor
-        public REST(RESTCredentials credentials)
+        public RestClient(RESTCredentials credentials)
         {
             //Sets the REST API credentials
             _credentials = credentials;

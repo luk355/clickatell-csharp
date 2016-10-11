@@ -7,10 +7,10 @@ namespace Clickatell.Services.Tests
     [TestClass]
     public class RESTTestFixtures
     {
-        private readonly APIClient _apiClient;
+        private readonly ApiClient _apiClient;
         public RESTTestFixtures()
         {
-            _apiClient = new REST(new RESTCredentials("authenticationToken"));
+            _apiClient = new RestClient(new RESTCredentials("authenticationToken"));
         }
 
         [TestMethod]

@@ -41,15 +41,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\JSON\REST\Test.cs" />
+    <Compile Include="IApiClient.cs" />
     <Compile Include="Properties\StatusSettings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>StatusSettings.settings</DependentUpon>
     </Compile>
-    <Compile Include="API\REST.cs" />
-    <Compile Include="API\HTTP.cs" />
-    <Compile Include="APIClient.cs" />
-    <Compile Include="APIHelper.cs" />
+    <Compile Include="API\RestClient.cs" />
+    <Compile Include="API\HttpClient.cs" />
+    <Compile Include="ApiClient.cs" />
+    <Compile Include="ApiHelper.cs" />
     <Compile Include="Data\MessagCoverageResponse.cs" />
     <Compile Include="Data\MessageCharge.cs" />
     <Compile Include="Data\MessageCoverage.cs" />
