@@ -49,6 +49,7 @@ function Exec
 }
 
 if(Test-Path .\artifacts) { Remove-Item .\artifacts -Force -Recurse }
+New-Item .\artifacts -type directory
 
 EnsurePsbuildInstalled
 
