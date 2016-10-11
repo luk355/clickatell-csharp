@@ -61,4 +61,4 @@ $revision = "{0:D4}" -f [convert]::ToInt32($revision, 10)
 
 #exec { & dotnet test .\test\Clickatell.Services.Tests -c Release }
 
-exec { & nuget pack .\src\Clickatell.Services -OutputDirectory .\artifacts -Prop Configuration=Release} 
+exec { & nuget pack .\src\Clickatell.Services\Clickatell.Services.csproj -OutputDirectory .\artifacts -Prop Configuration=Release} 
