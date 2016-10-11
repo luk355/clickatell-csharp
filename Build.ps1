@@ -52,7 +52,7 @@ if(Test-Path .\artifacts) { Remove-Item .\artifacts -Force -Recurse }
 
 EnsurePsbuildInstalled
 
-exec { & dotnet restore }
+exec { & nuget restore }
 
 Invoke-MSBuild
 
@@ -61,4 +61,4 @@ $revision = "{0:D4}" -f [convert]::ToInt32($revision, 10)
 
 #exec { & dotnet test .\test\Clickatell.Services.Tests -c Release }
 
-exec { & dotnet pack .\src\Clickatell.Services -c Release -o .\artifacts --version-suffix=$revision } 
+exec { & nuget pack .\src\Clickatell.Services -OutputDirectory .\artifacts -Prop Configuration=Release} 
