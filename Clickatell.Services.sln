@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Web
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clickatell.Services", "Services\Clickatell.Services.csproj", "{15DA1369-A486-46D0-A175-D957F64D0AD1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clickatell.Services.Tests", "Services\Tests\Clickatell.Services.Tests.csproj", "{A2D6B2B2-FDA5-42BA-BF70-4E58EE93C657}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLibraryConsume", "TestLibraryConsume\TestLibraryConsume.csproj", "{E59DFF3C-344A-447F-A1AC-FA1940AE0D84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{50A75AF6-F92E-4614-9109-6528E7B61B0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E8BE4DEE-EBF1-42E6-A332-A78EEC40A61A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,5 +35,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15DA1369-A486-46D0-A175-D957F64D0AD1} = {E8BE4DEE-EBF1-42E6-A332-A78EEC40A61A}
+		{A2D6B2B2-FDA5-42BA-BF70-4E58EE93C657} = {50A75AF6-F92E-4614-9109-6528E7B61B0E}
+		{E59DFF3C-344A-447F-A1AC-FA1940AE0D84} = {50A75AF6-F92E-4614-9109-6528E7B61B0E}
 	EndGlobalSection
 EndGlobal
