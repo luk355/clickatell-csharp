@@ -2,7 +2,7 @@
 
 namespace Clickatell.Services
 {
-    interface IApiClient
+    public interface IApiClient
     {
         /// <summary>
         /// Authenticate credentials supplied
