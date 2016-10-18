@@ -1,8 +1,8 @@
 # Clickatell C# Library
 
 [![Build status](https://ci.appveyor.com/api/projects/status/25dfc1r08o5krj1h/branch/master?svg=true)](https://ci.appveyor.com/project/luk355/clickatell-csharp/branch/master)
-[![MyGet CI](https://img.shields.io/myget/luk355-ci/v/clickatell-csharp.svg)](http://myget.org/gallery/luk355-ci)
-[![NuGet](https://img.shields.io/nuget/v/clickatell-csharp.svg)](https://www.nuget.org/packages/clickatell.services/)
+[![MyGet CI](https://img.shields.io/myget/luk355-ci/v/Clickatell.Services.svg)](http://myget.org/gallery/luk355-ci)
+[![NuGet](https://img.shields.io/nuget/v/Clickatell.Services.svg)](https://www.nuget.org/packages/Clickatell.Services/)
 
 Fork of clickatell-csharp library that integrates with Clickatell HTTP and REST APIs. Main purpose of this fork is to push this implementation into NuGet making it easier to use this library.
 
