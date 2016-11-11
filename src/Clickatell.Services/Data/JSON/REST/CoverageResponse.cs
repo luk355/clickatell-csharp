@@ -13,7 +13,7 @@ namespace Clickatell.Services.Data.JSON.REST
         {
             public bool routable { get; set; }
             public string destination { get; set; }
-            public int minimumCharge { get; set; }
+            public decimal minimumCharge { get; set; }
         }
     }
 }
