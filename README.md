@@ -18,19 +18,12 @@ The package also contains a simple C# ASP.NET test application that when compile
 
 All three projects contains extensive code commenting.
 
-### Library
-Clickatell.Services
+**Library** - Clickatell.Services
 
-### Test App
-TestLibraryConsume
+**Test App** - TestLibraryConsume
 
-### Authors
-Dewald de Bod
-Justin Kotze
-Lukas Behal
+**Authors** - Dewald de Bod, Justin Kotze, Lukas Behal
 
-### Date
-2016-10-18
+**Date** - 2016-10-18
 
-### Environment
-Windows
+**Environment** - Windows
