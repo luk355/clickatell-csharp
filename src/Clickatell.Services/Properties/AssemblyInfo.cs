@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("Clickatell.Services")]
 [assembly: AssemblyDescription(@"Clickatell HTTP and REST clients providing basic SMS functionality.
-Supports sending messages, cancelling queued messages, getting message cost,status and account balance.")]
+Supports sending messages, cancelling queued messages, getting message cost, status and account balance.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Lukas Behal")]
 [assembly: AssemblyProduct("Clickatell.Services")]
@@ -32,5 +32,5 @@ Supports sending messages, cancelling queued messages, getting message cost,stat
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.0.4")]
-[assembly: AssemblyFileVersion("0.0.4")]
+[assembly: AssemblyVersion("1.0.0")]
+[assembly: AssemblyFileVersion("1.0.0")]
